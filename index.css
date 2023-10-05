@@ -1,0 +1,268 @@
+/* 把我们所有标签的内外边距清零 */
+
+* {
+  margin: 0;
+  padding: 0;
+  /* css3盒子模型 */
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+
+/* em 和 i 斜体的文字不倾斜 */
+
+em,
+i {
+  font-style: normal
+}
+
+
+/* 去掉li 的小圆点 */
+
+
+img {
+  /* border 0 照顾低版本浏览器 如果 图片外面包含了链接会有边框的问题 */
+  border: 0;
+  /* 取消图片底侧有空白缝隙的问题 */
+  vertical-align: middle
+}
+
+button {
+  /* 当我们鼠标经过button 按钮的时候，鼠标变成小手 */
+  cursor: pointer
+}
+
+a {
+  color: #fff;
+  text-decoration: none
+}
+
+a:hover {
+  color: #c81623
+}
+
+button,
+input {
+  /* "\5B8B\4F53" 就是宋体的意思 这样浏览器兼容性比较好 */
+  font-family: Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+  /* 默认有灰色边框我们需要手动去掉 */
+  border: 0;
+  outline: none;
+}
+
+body {
+  /* CSS3 抗锯齿形 让文字显示的更加清晰 */
+  -webkit-font-smoothing: antialiased;
+  font: 12px/宋体;
+  color: #666;
+  background: url(../images/banner.webp) no-repeat;
+  background-size: 100% 100%;
+  opacity: .9;
+  width: 100%;
+  height: 1300px;
+}
+
+.red {
+  color: #c81623;
+  font-size: 30px;
+}
+
+.hide,
+.none {
+  display: none
+}
+
+
+/* 清除浮动 */
+
+.clearfix:after {
+  visibility: hidden;
+  clear: both;
+  display: block;
+  content: ".";
+  height: 0
+}
+
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+
+.box {
+  width: 100%;
+
+}
+
+.top {
+  overflow: hidden;
+}
+
+.box-left,
+.box-right {
+  float: left;
+  width: 5%;
+  background-color: yellow;
+  height: 1100px;
+}
+
+.box-left marquee,
+.box-right marquee {
+  font-size: 35px;
+  text-align: center;
+  color: #000;
+  height: 1100px;
+}
+
+.box-center {
+  float: left;
+  width: 90%;
+  height: 1100px;
+}
+
+.box-center .title {
+  float: left;
+}
+
+.box-center .title h1 {
+  color: #000;
+  padding-top: 30px;
+  margin-left: 130px;
+  font-size: 40px;
+  color: greenyellow
+}
+
+.box-center .img-left img,
+.box-center .img-right img {
+  float: left;
+  width: 100px;
+  height: 70px;
+  margin-top: 10px;
+  margin-left: 75px;
+}
+
+.box-center .img-right img {
+  float: right;
+  margin-right: 75px;
+}
+
+.text1 {
+  font-size: 20px;
+  color: #000;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: #c81623;
+}
+
+.text2 {
+  width: 100%;
+}
+
+.text2 p {
+  font-size: 40px;
+  color: #c81623;
+  text-align: center;
+}
+
+.text2 span {
+  color: greenyellow;
+}
+
+.text3 {
+  width: 100%;
+}
+
+.text3 p {
+  color: #c81623;
+  text-align: center;
+  font-size: 30px;
+}
+
+.box-bottom {
+  width: 100%;
+  height: 400px;
+  margin-top: 20px;
+}
+
+.box-bottom div {
+  float: left;
+  width: 33%;
+  height: 400px;
+  margin-left: 3px;
+}
+
+.img1 p {
+  color: #c81623;
+  padding-left: 6px;
+}
+
+.img1 img {
+  width: 90%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
+.img1 .di {
+  margin-top: 33px;
+}
+
+.img1 .bottom {
+  width: 90%;
+  height: 50px;
+  margin-top: 25px;
+  margin-left: 15px;
+  background-color: yellowgreen;
+  color: #fff;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+}
+
+.footer {
+  width: 100%;
+  height: 30px;
+  background-color: khaki;
+  margin-top: 20px;
+  line-height: 30px;
+  color: crimson;
+}
+
+.people {
+  position: relative;
+}
+
+.peopleimg {
+  position: fixed;
+  top: 450px;
+  left: 985px;
+  width: 300px;
+  height: 363px;
+}
+
+.peopleimg img {
+  width: 100%;
+  height: 100%;
+}
+
+.textimg {
+  position: fixed;
+  top: 375px;
+  left: 680px;
+  width: 415px;
+  height: 420px;
+  background: url(images/Untitled_Artwork的副本.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+.textimg h5 {
+  margin-top: 120px;
+  margin-left: 95px;
+  color: blue;
+}
+
+.textimg p {
+  margin-left: 95px;
+  color: blue;
+  font-size: 10px;
+} 
